@@ -24,7 +24,7 @@ public class RegistrationTC extends Config {
 	public void FullRegistrationTC() throws InterruptedException
 	{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		reg.Registration("AHD", "DIAA", "ahd+11240@runtastic.com","Testtest1234");
+		reg.Registration("AHD", "DIAA", "ahd+11241@runtastic.com","Testtest1234");
 		Reporter.log("The user is registered successfully");
 		loginout.onboarding2();
 		Reporter.log("The onboarding is passed successfully");
