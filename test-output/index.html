@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regression.CreatorsClubTC" class="method navigator-link" hash-for-method="FullCreatorsClubTC">FullCreatorsClubTC</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,27 +104,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regression.RegistrationTC" class="method navigator-link" hash-for-method="FullRegistrationTC">FullRegistrationTC</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regression.LoginLogoutTC" class="method navigator-link" hash-for-method="LoginOnboardingLogoutTC">LoginOnboardingLogoutTC</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="regression.CreatorsClubTC" class="method navigator-link" hash-for-method="FullCreatorsClubTC">FullCreatorsClubTC</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="regression.CreatorsClubTC" class="method navigator-link" hash-for-method="initiatecap">initiatecap</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regression.LoginLogoutTC" class="method navigator-link" hash-for-method="initiatecap">initiatecap</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regression.RegistrationTC" class="method navigator-link" hash-for-method="initiatecap">initiatecap</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -153,9 +124,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">regression.CreatorsClubTC</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -164,84 +135,6 @@
                   <a name="FullCreatorsClubTC">
                   </a> <!-- FullCreatorsClubTC -->
                   <span class="method-name">FullCreatorsClubTC</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element &apos;By.id: com.runtastic.android.results.lite:id/questionnaireContinueCta&apos; does not exist in DOM anymore
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ofc-02696-m&apos;, ip: &apos;192.168.0.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;12.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/ahd/Desktop/AppiumPr..., appActivity: com.runtastic.android.resul..., appPackage: com.runtastic.android.resul..., automationName: uiautomator2, databaseEnabled: false, desired: {app: /Users/ahd/Desktop/AppiumPr..., appActivity: com.runtastic.android.resul..., appPackage: com.runtastic.android.resul..., automationName: uiautomator2, deviceName: Pixel 4 XL AHD, platformName: android}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: c2b458aa-aeae-4afa-908a-93c1facd2daa
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at findelements.LoginLogoutElements.onboarding3(LoginLogoutElements.java:139)
-	at regression.CreatorsClubTC.FullCreatorsClubTC(CreatorsClubTC.java:31)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">regression.RegistrationTC</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="FullRegistrationTC">
-                  </a> <!-- FullRegistrationTC -->
-                  <span class="method-name">FullRegistrationTC</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="initiatecap">
-                  </a> <!-- initiatecap -->
-                  <span class="method-name">initiatecap</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">regression.CreatorsClubTC</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="initiatecap">
-                  </a> <!-- initiatecap -->
-                  <span class="method-name">initiatecap</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">regression.LoginLogoutTC</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginOnboardingLogoutTC">
-                  </a> <!-- LoginOnboardingLogoutTC -->
-                  <span class="method-name">LoginOnboardingLogoutTC</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -265,8 +158,6 @@ Session ID: c2b458aa-aeae-4afa-908a-93c1facd2daa
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;RegressionTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;regression.LoginLogoutTC&quot;/&gt;
-      &lt;class name=&quot;regression.RegistrationTC&quot;/&gt;
       &lt;class name=&quot;regression.CreatorsClubTC&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- RegressionTest --&gt;
@@ -281,7 +172,7 @@ Session ID: c2b458aa-aeae-4afa-908a-93c1facd2daa
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">RegressionTest (3 classes)</span>
+                <span class="test-name">RegressionTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -307,31 +198,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'FullRegistrationTC')
-data.setCell(0, 2, 'regression.RegistrationTC')
-data.setCell(0, 3, 40533);
+data.setCell(0, 1, 'FullCreatorsClubTC')
+data.setCell(0, 2, 'regression.CreatorsClubTC')
+data.setCell(0, 3, 75521);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoginOnboardingLogoutTC')
-data.setCell(1, 2, 'regression.LoginLogoutTC')
-data.setCell(1, 3, 39549);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'initiatecap')
-data.setCell(2, 2, 'regression.LoginLogoutTC')
-data.setCell(2, 3, 18054);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'initiatecap')
-data.setCell(3, 2, 'regression.CreatorsClubTC')
-data.setCell(3, 3, 8908);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'initiatecap')
-data.setCell(4, 2, 'regression.RegistrationTC')
-data.setCell(4, 3, 8448);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'FullCreatorsClubTC')
-data.setCell(5, 2, 'regression.CreatorsClubTC')
-data.setCell(5, 3, 2850);
+data.setCell(1, 1, 'initiatecap')
+data.setCell(1, 2, 'regression.CreatorsClubTC')
+data.setCell(1, 3, 12412);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -348,18 +223,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">FullRegistrationTC</span>
+              <span class="reporter-method-name">FullCreatorsClubTC</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">The user is registered successfully</span>
-                <span class="reporter-method-output">The onboarding is passed successfully</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">LoginOnboardingLogoutTC</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">The user logged in successfully</span>
-                <span class="reporter-method-output">The user passed onboarding successfully</span>
-                <span class="reporter-method-output">User logged out successfully</span>
+                <span class="reporter-method-output">Creators Club is openned successfully</span>
+                <span class="reporter-method-output">Overview tab and History tab checked successfully</span>
+                <span class="reporter-method-output">More options are shown successfully</span>
+                <span class="reporter-method-output">Creator pass is shown successfully</span>
+                <span class="reporter-method-output">Earn points is shown and show-more buttons are working successfully</span>
+                <span class="reporter-method-output">Levels checked and can be opened successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -377,38 +248,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">regression.LoginLogoutTC</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">regression.CreatorsClubTC</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">initiatecap</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">LoginOnboardingLogoutTC</span>
-                <span class="method-start">18065 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">regression.RegistrationTC</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">initiatecap</span>
-                <span class="method-start">57617 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">FullRegistrationTC</span>
-                <span class="method-start">66068 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">regression.CreatorsClubTC</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">initiatecap</span>
-                <span class="method-start">106603 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">FullCreatorsClubTC</span>
-                <span class="method-start">115514 ms</span>
+                <span class="method-start">12423 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -100,7 +100,7 @@ public class ActivateTPElements extends Config {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		GetWorkoutDetails().click();
 		driver.pressKey(new KeyEvent().withKey(AndroidKey.BACK));
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.pressKey(new KeyEvent().withKey(AndroidKey.BACK));
 		driver.pressKey(new KeyEvent().withKey(AndroidKey.BACK));
 	}
 	

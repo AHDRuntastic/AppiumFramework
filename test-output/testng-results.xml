@@ -1,138 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[The user logged in successfully]]>
+      <![CDATA[Creators Club is openned successfully]]>
     </line>
     <line>
-      <![CDATA[The user passed onboarding successfully]]>
+      <![CDATA[Overview tab and History tab checked successfully]]>
     </line>
     <line>
-      <![CDATA[User logged out successfully]]>
+      <![CDATA[More options are shown successfully]]>
     </line>
     <line>
-      <![CDATA[The user is registered successfully]]>
+      <![CDATA[Creator pass is shown successfully]]>
     </line>
     <line>
-      <![CDATA[The onboarding is passed successfully]]>
+      <![CDATA[Earn points is shown and show-more buttons are working successfully]]>
+    </line>
+    <line>
+      <![CDATA[Levels checked and can be opened successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-11-30T23:18:08 CET" name="Suite" finished-at="2021-11-30T23:20:07 CET" duration-ms="118428">
+  <suite started-at="2021-11-30T23:33:58 CET" name="Suite" finished-at="2021-11-30T23:35:26 CET" duration-ms="87972">
     <groups>
     </groups>
-    <test started-at="2021-11-30T23:18:08 CET" name="RegressionTest" finished-at="2021-11-30T23:20:07 CET" duration-ms="118428">
-      <class name="regression.LoginLogoutTC">
-        <test-method signature="initiatecap()[pri:1, instance:regression.LoginLogoutTC@65cf4d6d]" started-at="2021-11-30T23:18:08 CET" name="initiatecap" finished-at="2021-11-30T23:18:26 CET" duration-ms="18054" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiatecap -->
-        <test-method signature="LoginOnboardingLogoutTC()[pri:2, instance:regression.LoginLogoutTC@65cf4d6d]" started-at="2021-11-30T23:18:26 CET" name="LoginOnboardingLogoutTC" finished-at="2021-11-30T23:19:06 CET" duration-ms="39549" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[The user logged in successfully]]>
-            </line>
-            <line>
-              <![CDATA[The user passed onboarding successfully]]>
-            </line>
-            <line>
-              <![CDATA[User logged out successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- LoginOnboardingLogoutTC -->
-      </class> <!-- regression.LoginLogoutTC -->
-      <class name="regression.RegistrationTC">
-        <test-method signature="initiatecap()[pri:1, instance:regression.RegistrationTC@4debbf0]" started-at="2021-11-30T23:19:06 CET" name="initiatecap" finished-at="2021-11-30T23:19:14 CET" duration-ms="8448" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiatecap -->
-        <test-method signature="FullRegistrationTC()[pri:2, instance:regression.RegistrationTC@4debbf0]" started-at="2021-11-30T23:19:14 CET" name="FullRegistrationTC" finished-at="2021-11-30T23:19:55 CET" duration-ms="40533" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[The user is registered successfully]]>
-            </line>
-            <line>
-              <![CDATA[The onboarding is passed successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- FullRegistrationTC -->
-      </class> <!-- regression.RegistrationTC -->
+    <test started-at="2021-11-30T23:33:58 CET" name="RegressionTest" finished-at="2021-11-30T23:35:26 CET" duration-ms="87972">
       <class name="regression.CreatorsClubTC">
-        <test-method signature="initiatecap()[pri:1, instance:regression.CreatorsClubTC@6a5e167a]" started-at="2021-11-30T23:19:55 CET" name="initiatecap" finished-at="2021-11-30T23:20:04 CET" duration-ms="8908" status="PASS">
+        <test-method signature="initiatecap()[pri:1, instance:regression.CreatorsClubTC@3aefe5e5]" started-at="2021-11-30T23:33:58 CET" name="initiatecap" finished-at="2021-11-30T23:34:11 CET" duration-ms="12412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiatecap -->
-        <test-method signature="FullCreatorsClubTC()[pri:2, instance:regression.CreatorsClubTC@6a5e167a]" started-at="2021-11-30T23:20:04 CET" name="FullCreatorsClubTC" finished-at="2021-11-30T23:20:07 CET" duration-ms="2850" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[The element 'By.id: com.runtastic.android.results.lite:id/questionnaireContinueCta' does not exist in DOM anymore
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ofc-02696-m', ip: '192.168.0.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '12.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/ahd/Desktop/AppiumPr..., appActivity: com.runtastic.android.resul..., appPackage: com.runtastic.android.resul..., automationName: uiautomator2, databaseEnabled: false, desired: {app: /Users/ahd/Desktop/AppiumPr..., appActivity: com.runtastic.android.resul..., appPackage: com.runtastic.android.resul..., automationName: uiautomator2, deviceName: Pixel 4 XL AHD, platformName: android}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: c2b458aa-aeae-4afa-908a-93c1facd2daa]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element 'By.id: com.runtastic.android.results.lite:id/questionnaireContinueCta' does not exist in DOM anymore
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ofc-02696-m', ip: '192.168.0.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '12.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/ahd/Desktop/AppiumPr..., appActivity: com.runtastic.android.resul..., appPackage: com.runtastic.android.resul..., automationName: uiautomator2, databaseEnabled: false, desired: {app: /Users/ahd/Desktop/AppiumPr..., appActivity: com.runtastic.android.resul..., appPackage: com.runtastic.android.resul..., automationName: uiautomator2, deviceName: Pixel 4 XL AHD, platformName: android}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: c2b458aa-aeae-4afa-908a-93c1facd2daa
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at findelements.LoginLogoutElements.onboarding3(LoginLogoutElements.java:139)
-at regression.CreatorsClubTC.FullCreatorsClubTC(CreatorsClubTC.java:31)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method signature="FullCreatorsClubTC()[pri:2, instance:regression.CreatorsClubTC@3aefe5e5]" started-at="2021-11-30T23:34:11 CET" name="FullCreatorsClubTC" finished-at="2021-11-30T23:35:26 CET" duration-ms="75521" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Creators Club is openned successfully]]>
+            </line>
+            <line>
+              <![CDATA[Overview tab and History tab checked successfully]]>
+            </line>
+            <line>
+              <![CDATA[More options are shown successfully]]>
+            </line>
+            <line>
+              <![CDATA[Creator pass is shown successfully]]>
+            </line>
+            <line>
+              <![CDATA[Earn points is shown and show-more buttons are working successfully]]>
+            </line>
+            <line>
+              <![CDATA[Levels checked and can be opened successfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- FullCreatorsClubTC -->
       </class> <!-- regression.CreatorsClubTC -->

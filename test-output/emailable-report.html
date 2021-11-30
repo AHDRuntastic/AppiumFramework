@@ -9,39 +9,11 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">RegressionTest</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">118,428</td><td></td><td></td></tr>
+<tr><td><a href="#t0">RegressionTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">87,972</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">regression.CreatorsClubTC</td><td><a href="#m0">FullCreatorsClubTC</a></td><td rowspan="1">1638310804420</td><td rowspan="1">2850</td></tr><tr><th colspan="4">RegressionTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">regression.CreatorsClubTC</td><td><a href="#m1">initiatecap</a></td><td rowspan="1">1638310795509</td><td rowspan="1">8908</td></tr><tr class="passedodd"><td rowspan="2">regression.LoginLogoutTC</td><td><a href="#m2">LoginOnboardingLogoutTC</a></td><td rowspan="1">1638310706971</td><td rowspan="1">39549</td></tr><tr class="passedodd"><td><a href="#m3">initiatecap</a></td><td rowspan="1">1638310688906</td><td rowspan="1">18054</td></tr><tr class="passedeven"><td rowspan="2">regression.RegistrationTC</td><td><a href="#m4">FullRegistrationTC</a></td><td rowspan="1">1638310754974</td><td rowspan="1">40533</td></tr><tr class="passedeven"><td><a href="#m5">initiatecap</a></td><td rowspan="1">1638310746523</td><td rowspan="1">8448</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">regression.CreatorsClubTC</td><td><a href="#m0">FullCreatorsClubTC</a></td><td rowspan="1">1638311651183</td><td rowspan="1">75521</td></tr><tr class="passedeven"><td><a href="#m1">initiatecap</a></td><td rowspan="1">1638311638760</td><td rowspan="1">12412</td></tr></tbody>
 </table>
-<h2>RegressionTest</h2><h3 id="m0">regression.CreatorsClubTC#FullCreatorsClubTC</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: The element &apos;By.id: com.runtastic.android.results.lite:id/questionnaireContinueCta&apos; does not exist in DOM anymore
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ofc-02696-m&apos;, ip: &apos;192.168.0.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;12.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/ahd/Desktop/AppiumPr..., appActivity: com.runtastic.android.resul..., appPackage: com.runtastic.android.resul..., automationName: uiautomator2, databaseEnabled: false, desired: {app: /Users/ahd/Desktop/AppiumPr..., appActivity: com.runtastic.android.resul..., appPackage: com.runtastic.android.resul..., automationName: uiautomator2, deviceName: Pixel 4 XL AHD, platformName: android}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: c2b458aa-aeae-4afa-908a-93c1facd2daa
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at findelements.LoginLogoutElements.onboarding3(LoginLogoutElements.java:139)
-	at regression.CreatorsClubTC.FullCreatorsClubTC(CreatorsClubTC.java:31)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>RegressionTest</h2><h3 id="m0">regression.CreatorsClubTC#FullCreatorsClubTC</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Creators Club is openned successfully<br/>Overview tab and History tab checked successfully<br/>More options are shown successfully<br/>Creator pass is shown successfully<br/>Earn points is shown and show-more buttons are working successfully<br/>Levels checked and can be opened successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">regression.CreatorsClubTC#initiatecap</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">regression.LoginLogoutTC#LoginOnboardingLogoutTC</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">The user logged in successfully<br/>The user passed onboarding successfully<br/>User logged out successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">regression.LoginLogoutTC#initiatecap</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">regression.RegistrationTC#FullRegistrationTC</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">The user is registered successfully<br/>The onboarding is passed successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">regression.RegistrationTC#initiatecap</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
