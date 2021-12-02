@@ -6,8 +6,6 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class CreatorsClubTC extends Config {

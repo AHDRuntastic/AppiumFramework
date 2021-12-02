@@ -2,15 +2,16 @@ package regression;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import resources.ExcelReader;
+
 import org.testng.Assert;
 import org.testng.Reporter;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class LoginLogoutTC extends Config {
@@ -24,10 +25,32 @@ public class LoginLogoutTC extends Config {
 	}
 	
 	
+	@DataProvider (name="Logindata") 
+	public static Object[][] userloginData() throws IOException
+	{
+		/*
+		 * return new Object[][] {
+		 * 
+		 * {"ahd+4@runtastic.eu","Testtest1"}, {"ahd+6@runtastic.eu","Testtest1"}
+		 * 
+		 * 
+		 * };
+		 */
+		
+		
+		ExcelReader er = new ExcelReader();
+		return er.getExcelData();
+		
+		
+		
+	}
 	
-	@Test(priority=2)
-	public void LoginOnboardingLogoutTC() {
-		loginout.login("ahd+4@runtastic.eu", "Testtest1");
+	
+	
+	
+	@Test(priority=2,dataProvider="Logindata")
+	public void LoginOnboardingLogoutTC(String Email, String Password) {
+		loginout.login(Email, Password);
 		Reporter.log("The user logged in successfully"); // to add logs
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS); // to wait till the app is started
 

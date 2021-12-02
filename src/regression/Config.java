@@ -1,15 +1,11 @@
 package regression;
 
-import org.testng.annotations.Test;
-
 import findelements.ActivateTPElements;
 import findelements.CreatorsClubElements;
 import findelements.LoginLogoutElements;
 import findelements.RegistrationElements;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+
 import java.io.File;
 import java.net.ServerSocket;
 import java.net.URL;
@@ -46,7 +42,7 @@ public class Config {
 		  File appiumf = new File("/usr/local/bin/appium");
 		  builder.usingDriverExecutable(nodef).withAppiumJS(appiumf).withIPAddress("127.0.0.1").usingPort(4723);
 		  
-		  service = AppiumDriverLocalService.buildService(builder); 
+		  service = AppiumDriverLocalService.buildService(builder);
 		  service.start();
 		}
 		  return service;
