@@ -34,7 +34,7 @@ public class ExcelReader {
 	{
 		
 		fis = getFileInputStream();
-		XSSFWorkbook wb = new XSSFWorkbook(fis); //Get whole file
+		XSSFWorkbook wb = new XSSFWorkbook(fis); //Get whole excel file
 		XSSFSheet sheet = wb.getSheetAt(0);  //Get sheet inside the file
 		
 		int TotalNumberOfRows = (sheet.getLastRowNum()+1); 
