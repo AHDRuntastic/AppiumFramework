@@ -43,7 +43,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Dec 2, 2021 12:54:58 AM</span>
+			<span class='label blue darken-3 suite-start-time'>Dec 2, 2021 06:08:18 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -59,7 +59,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -102,10 +102,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -126,14 +126,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>initiatecap</span>
-						<span class='test-time'>Dec 2, 2021 12:54:58 AM</span>
+						<span class='test-time'>Dec 2, 2021 06:08:19 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 2, 2021 12:54:58 AM</span>
-	<span class='label end-time'>Dec 2, 2021 12:54:58 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
+	<span class='label start-time'>Dec 2, 2021 06:08:19 PM</span>
+	<span class='label end-time'>Dec 2, 2021 06:08:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -147,7 +147,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>12:54:58 AM</td>
+				<td class='timestamp'>6:08:19 PM</td>
 				<td class='step-details'>
 						Test passed
 					
@@ -158,16 +158,51 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='2'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>LoginOnboardingLogoutTC</span>
-						<span class='test-time'>Dec 2, 2021 12:54:58 AM</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='test-time'>Dec 2, 2021 06:08:19 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 2, 2021 12:54:58 AM</span>
-	<span class='label end-time'>Dec 2, 2021 12:54:58 AM</span>
+	<span class='label start-time'>Dec 2, 2021 06:08:19 PM</span>
+	<span class='label end-time'>Dec 2, 2021 06:08:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:08:19 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>LoginOnboardingLogoutTC</span>
+						<span class='test-time'>Dec 2, 2021 06:08:19 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 2, 2021 06:08:19 PM</span>
+	<span class='label end-time'>Dec 2, 2021 06:08:19 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
@@ -180,12 +215,18 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='skip'>
-				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-				<td class='timestamp'>12:54:58 AM</td>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:08:19 PM</td>
 				<td class='step-details'>
-						java.lang.Error: Unresolved compilation problem: 
-	This method must return a result of type Object[][]
+						An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ofc-02696-m', ip: '192.168.0.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '12.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/ahd/Desktop/AppiumPr..., appActivity: com.runtastic.android.resul..., appPackage: com.runtastic.android.resul..., automationName: uiautomator2, databaseEnabled: false, desired: {app: /Users/ahd/Desktop/AppiumPr..., appActivity: com.runtastic.android.resul..., appPackage: com.runtastic.android.resul..., automationName: uiautomator2, deviceName: Pixel 4 XL AHD, platformName: android}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 5e48c4a2-aa5d-44a8-83ba-7e5ad179de48
+*** Element info: {Using=id, value=com.runtastic.android.results.lite:id/questionnaireContinueCta}
 					
 				</td>
 			</tr>
@@ -223,7 +264,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -235,13 +276,13 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 2, 2021 12:54:58 AM</div>
+					<div class='panel-lead'>Dec 2, 2021 06:08:18 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 2, 2021 12:54:58 AM</div>
+			 		<div class='panel-lead'>Dec 2, 2021 06:08:18 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -258,12 +299,12 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 2,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 1,
+				skipParent: 0,
 				exceptionsParent: 1,
 				
 				passChild: 0,
@@ -289,7 +330,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "initiatecap":0.002,"LoginOnboardingLogoutTC":0
+			        "initiatecap":0.001,"LoginOnboardingLogoutTC":0.001,"LoginOnboardingLogoutTC":0
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/master/v3html/js/extent.js' type='text/javascript'></script>
