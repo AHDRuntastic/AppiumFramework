@@ -51,7 +51,7 @@ public class LoginLogoutTC extends Config {
 	@Test(priority=2,dataProvider="Logindata")
 	public void LoginOnboardingLogoutTC(String Email, String Password) {
 		loginout.login(Email, Password);
-		Reporter.log("The user logged in successfully"); // to add logs
+		Reporter.log("The user logged in successfully"); // is used to add logs
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS); // to wait till the app is started
 
 		loginout.onboarding();
