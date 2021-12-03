@@ -9,9 +9,9 @@
 
   <test thread-count="5" name="RegressionTest">
     <classes>
-     <class name="regression.LoginLogoutTC"/>
-<!--      <class name="regression.RegistrationTC"/>
-     <class name="regression.CreatorsClubTC"/> -->
+<!--      <class name="regression.LoginLogoutTC"/>
+     <class name="regression.RegistrationTC"/> -->
+    <class name="regression.CreatorsClubTC"/> 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

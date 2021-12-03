@@ -24,8 +24,7 @@ public class CreatorsClubTC extends Config {
 	public void FullCreatorsClubTC() throws InterruptedException
 	{
 		
-		
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);		
+				
 		loginout.onboarding3();
 		
 		

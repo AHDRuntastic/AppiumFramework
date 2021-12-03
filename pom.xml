@@ -31,7 +31,7 @@
 					<version>3.0.0-M4</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>testng.xml</suiteXmlFile>
+							<suiteXmlFile>${testNGSuite}</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
@@ -41,7 +41,7 @@
 
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/io.appium/java-clien -->
+		<!-- https://mvnrepository.com/artifact/io.appium/java-clie -->
 		<dependency>
 			<groupId>io.appium</groupId>
 			<artifactId>java-client</artifactId>
@@ -121,4 +121,19 @@
 			<version>5.0.0</version>
 		</dependency>
 	</dependencies>
+	<profiles>
+		<profile>
+			<id>regression</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<property>
+					<name>environment</name>
+					<value>regression</value>
+				</property>
+			</activation>
+			<properties>
+				<testNGSuite>regressionsuite.xml</testNGSuite>
+			</properties>
+		</profile>
+	</profiles>
 </project>

@@ -1,73 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="0" skipped="1">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Creators Club is openned successfully]]>
+    </line>
+    <line>
+      <![CDATA[Overview tab and History tab checked successfully]]>
+    </line>
+    <line>
+      <![CDATA[More options are shown successfully]]>
+    </line>
+    <line>
+      <![CDATA[Creator pass is shown successfully]]>
+    </line>
+    <line>
+      <![CDATA[Earn points is shown and show-more buttons are working successfully]]>
+    </line>
+    <line>
+      <![CDATA[Levels checked and can be opened successfully]]>
+    </line>
   </reporter-output>
-  <suite started-at="2021-12-02T00:54:44 CET" name="Suite" finished-at="2021-12-02T00:54:58 CET" duration-ms="14238">
+  <suite started-at="2021-12-03T16:01:33 CET" name="Suite" finished-at="2021-12-03T16:02:56 CET" duration-ms="82226">
     <groups>
     </groups>
-    <test started-at="2021-12-02T00:54:44 CET" name="RegressionTest" finished-at="2021-12-02T00:54:58 CET" duration-ms="14238">
-      <class name="regression.LoginLogoutTC">
-        <test-method signature="initiatecap()[pri:1, instance:regression.LoginLogoutTC@7334aada]" started-at="2021-12-02T00:54:44 CET" name="initiatecap" finished-at="2021-12-02T00:54:58 CET" duration-ms="14195" status="PASS">
+    <test started-at="2021-12-03T16:01:33 CET" name="RegressionTest" finished-at="2021-12-03T16:02:56 CET" duration-ms="82226">
+      <class name="regression.CreatorsClubTC">
+        <test-method signature="initiatecap()[pri:1, instance:regression.CreatorsClubTC@5f058f00]" started-at="2021-12-03T16:01:33 CET" name="initiatecap" finished-at="2021-12-03T16:01:45 CET" duration-ms="11935" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiatecap -->
-        <test-method signature="LoginOnboardingLogoutTC(java.lang.String,java.lang.String)[pri:2, instance:regression.LoginLogoutTC@7334aada]" started-at="2021-12-02T00:54:58 CET" name="LoginOnboardingLogoutTC" data-provider="Logindata" finished-at="2021-12-02T00:54:58 CET" duration-ms="0" status="SKIP">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.Error: Unresolved compilation problem: 
-This method must return a result of type Object[][]
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.Error: Unresolved compilation problem: 
-This method must return a result of type Object[][]
-
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.Error: Unresolved compilation problem: 
-This method must return a result of type Object[][]
-
-at resources.ExcelReader.getExcelData(ExcelReader.java:33)
-at regression.LoginLogoutTC.userloginData(LoginLogoutTC.java:42)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method signature="FullCreatorsClubTC()[pri:2, instance:regression.CreatorsClubTC@5f058f00]" started-at="2021-12-03T16:01:45 CET" name="FullCreatorsClubTC" finished-at="2021-12-03T16:02:56 CET" duration-ms="70250" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Creators Club is openned successfully]]>
+            </line>
+            <line>
+              <![CDATA[Overview tab and History tab checked successfully]]>
+            </line>
+            <line>
+              <![CDATA[More options are shown successfully]]>
+            </line>
+            <line>
+              <![CDATA[Creator pass is shown successfully]]>
+            </line>
+            <line>
+              <![CDATA[Earn points is shown and show-more buttons are working successfully]]>
+            </line>
+            <line>
+              <![CDATA[Levels checked and can be opened successfully]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- LoginOnboardingLogoutTC -->
-      </class> <!-- regression.LoginLogoutTC -->
+        </test-method> <!-- FullCreatorsClubTC -->
+      </class> <!-- regression.CreatorsClubTC -->
     </test> <!-- RegressionTest -->
   </suite> <!-- Suite -->
 </testng-results>
